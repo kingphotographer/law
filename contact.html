@@ -12,12 +12,7 @@
       --gray-light: #f5f5f5;
       --input-border: #ccc;
     }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--gray-light);
-      color: #333;
-    }
+
     header {
       background: var(--green);
       padding: 1rem;
@@ -89,6 +84,23 @@
       main { margin: 1rem; padding: 1rem; }
     }
   </style>
+
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const selectedCase = params.get("case");
+
+    if (selectedCase) {
+      const caseSelect = document.getElementById("case");
+      if (caseSelect) {
+        caseSelect.value = selectedCase;
+        caseSelect.dispatchEvent(new Event("change"));
+      }
+    }
+  });
+</script>
+
+
 </head>
 <body>
 
@@ -114,17 +126,24 @@
     <p class="subtitle">No obligation. 100% confidential. We’re here to help.</p>
 
     <form action="https://formspree.io/f/mvgajyal" method="POST">
+
       <input type="text" name="name" placeholder="Your Full Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
-      <select name="case_type" required>
+
+      <select id= "case" name="case_type" required>
         <option value="" disabled selected>Type of Case…</option>
-        <option value="personal_injury">Personal Injury</option>
-        <option value="family_law">Family Law</option>
-        <option value="criminal_defense">Criminal Defense</option>
-        <option value="estate_planning">Estate Planning</option>
+        <option value="property_law">Property Law</option>
+        <option value="labour_law">Labour and Employment Law</option>
+        <option value="corporate_law">Corporate Law</option>
+        <option value="company_secretarial">Conpany Secretarial</option>
+        <option value="aviation_law">Aviation Law</option>
+        <option value="marintime_law">Marintime Law</option>
+        <option value="banking_law">Banking and Finance</option>
+        <option value="insurance_law">Insurance</option>
         <option value="other">Other</option>
       </select>
+
       <textarea name="message" rows="4" placeholder="Briefly describe your situation…" required></textarea>
       <button type="submit">Request a Free Consultation</button>
     </form>
@@ -136,6 +155,7 @@
       <p>Or visit our office at <a href="https://g.co/kgs/EguUm3i">No. 6 Royalt Close Kokomlele, Accra</a> </p>
     </div>
   </main>
+
   <footer class="contact-field">
     <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9418709907986!2d-0.2078624!3d5.575612700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9937ecc4a3a7%3A0x7d182b87566b2524!2sOpoku%20Agyei%20%26%20Co.!5e0!3m2!1sen!2suk!4v1748271012104!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -146,5 +166,6 @@
         <a href="https://api.whatsapp.com/send/?phone=233205179770&text=Hello there, Opoku Agyei and Company%2C&type=phone_number&app_absent=0"><p>WhatsApp: 0205170770</p></a>
     </section>
 </footer>
+
 </body>
 </html>
