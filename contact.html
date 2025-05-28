@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | [Your Firm Name]</title>
+  <style>
+    :root {
+      --green: #2c7a2c;
+      --white: #ffffff;
+      --gray-light: #f5f5f5;
+      --input-border: #ccc;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--gray-light);
+      color: #333;
+    }
+    header {
+      background: var(--green);
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      max-height: 50px;
+    }
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: var(--white);
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 4px;
+    }
+    h1 {
+      margin-top: 0;
+      color: var(--green);
+      font-size: 1.75rem;
+      text-align: center;
+    }
+    p.subtitle {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--input-border);
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--green);
+      box-shadow: 0 0 0 2px rgba(44,122,44,0.2);
+    }
+    button {
+      background: var(--green);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.2s ease;
+    }
+    button:hover {
+      background: #276b27;
+    }
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+    }
+    .contact-info a {
+      color: var(--green);
+      text-decoration: none;
+    }
+    @media (max-width: 480px) {
+      main { margin: 1rem; padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stuck">
+    <section class="heading">
+        <img src="LogoRemoved.png" alt="">
+
+        <h1 class="title">Opoku Agyei & Company</h1>
+
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Links.html">Quicklinks</a></li>
+        </ul>
+
+    </section>
+
+</div>
+
+  <main>
+    <h1>Let’s Talk About Your Case</h1>
+    <p class="subtitle">No obligation. 100% confidential. We’re here to help.</p>
+
+    <form action="https://formspree.io/f/mvgajyal" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="case_type" required>
+        <option value="" disabled selected>Type of Case…</option>
+        <option value="personal_injury">Personal Injury</option>
+        <option value="family_law">Family Law</option>
+        <option value="criminal_defense">Criminal Defense</option>
+        <option value="estate_planning">Estate Planning</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Briefly describe your situation…" required></textarea>
+      <button type="submit">Request a Free Consultation</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Prefer to talk? Call us now:</p>
+      <p><a href="tel:+233205170770">+233 20-517-0770</a></p>
+      <p>Or email us on <a href="mailto:opoku.agyei@oaclegal.com">opoku.agyei@oaclegal.com</a></p>
+      <p>Or visit our office at <a href="https://g.co/kgs/EguUm3i">No. 6 Royalt Close Kokomlele, Accra</a> </p>
+    </div>
+  </main>
+  <footer class="contact-field">
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9418709907986!2d-0.2078624!3d5.575612700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9937ecc4a3a7%3A0x7d182b87566b2524!2sOpoku%20Agyei%20%26%20Co.!5e0!3m2!1sen!2suk!4v1748271012104!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-text">
+        <a href="mailto:opoku.agyei@oaclegal.com"><p>Email: Opoku.agyei@oaclegal.com</p></a>
+        <a href="https://api.whatsapp.com/send/?phone=233205179770&text=Hello there, Opoku Agyei and Company%2C&type=phone_number&app_absent=0"><p>WhatsApp: 0205170770</p></a>
+    </section>
+</footer>
+</body>
+</html>
