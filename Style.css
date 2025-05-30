@@ -195,6 +195,39 @@ footer.contact-field {
     margin: 0.3rem 0;
 }
 
+.dropdown {
+    display: none;
+    margin-top: 0.5rem;
+    background-color: #f9f9f9;
+    /* border-left: 3px solid #444; */
+    padding: 1rem;
+    border-radius: 0 6px 6px 0;
+    list-style-type: none;
+}
+.dropdown li{
+    list-style-type:disc;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #ddd;
+}
+
+.dropdown.active {
+    display: block;
+}
+
+.services{
+    list-style: none;
+    list-style-type: none;
+}
 @media screen and (max-width: 768px) {
     .heading {
         flex-direction: column;
