@@ -1,264 +1,261 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #212529;
-  line-height: 1.8;
-  overflow-x: hidden;
-  text-align: center;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.8;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
-  font-family: 'Georgia', serif;
-  color: #144f31;
+    font-family: 'Georgia', serif;
+    color: #144f31;
 }
 
 a {
-  color: #344e41;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
+    color: #344e41;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-  color: #344e41;
-  text-decoration: underline;
+    color: #344e41;
+    text-decoration: underline;
 }
 
-/* === Header Styles === */
 .heading {
-  background-color: #344e41;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  color: white;
-  flex-wrap: wrap;
+    background-color: #344e41;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
 }
 
 .heading img {
-  width: 60px;
-  height: auto;
+    width: 60px;
+    height: auto;
 }
 
 .title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
 }
 
 .nav {
-  display: flex;
-  gap: 0.8rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1 1 auto;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
 }
 
 .nav li a {
-  color: white;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  background-color: transparent;
-  display: block;
-  white-space: nowrap;
+    color: white;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
 }
 
 .nav li a:hover {
-  background-color: #395870;
+    background-color: #395870;
 }
 
-/* === Responsive Layout === */
-@media screen and (max-width: 768px) {
-  .heading {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
-  .nav {
-    flex-direction: row;
-    justify-content: center;
-    overflow-x: auto;
-    width: 100%;
-    flex-wrap: nowrap;
-  }
-
-  .nav li {
-    flex: 0 0 auto;
-  }
-}
-
-/* === Additional Styling (unchanged from your original code) === */
 .quick-contact {
-  background-color: #0f5132;
-  color: white;
-  padding: 0.6rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
+    background-color: #0f5132;
+    color: white;
+    padding: 0.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .main-body {
-  padding: 2rem 4vw;
+    padding: 2rem 4vw;
 }
 
 .about img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin: 1rem auto;
-  display: block;
-  border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .practice-elements {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 .practice-elements li {
-  list-style: none;
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    list-style: none;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .practice-elements img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .practice-elements img:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
 }
 
-.quicklinks {
-  padding: 50px;
-  text-align: center;
+.quicklinks{
+    padding: 50px;
+    text-align: center;
+}
+.quicklinks h3{
+    line-height: 2em;
 }
 
-.quicklinks h3 {
-  line-height: 2em;
-}
-
-.quicklinks a {
-  color: #000;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-decoration: underline;
-  line-height: 30px;
-  font-weight: bolder;
+.quicklinks a{
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: underline;
+    line-height: 30px;
+    list-style: decimal;
+    font-weight: bolder;
 }
 
 .practice-elements figcaption {
-  padding: 1rem;
-  font-weight: bold;
-  text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
-
 .floating-contact-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #344e41;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-weight: bold;
-  font-size: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  z-index: 1000;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #344e41; /* Dark green tone */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 999px; /* Fully rounded pill shape */
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .floating-contact-button:hover {
-  background-color: #588157;
-  transform: translateY(-2px);
+    background-color: #588157; /* Lighter green on hover */
+    transform: translateY(-2px);
 }
-.contact-field {
-  background-color: #344e41;
-  color: white;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
+
+footer.contact-field {
+    background-color: #344e41;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .map iframe {
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  margin-bottom: 1rem;
-  padding-left: 20%;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-bottom: 1rem;
 }
 
 .contact-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  float: right;
-    padding-left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-text a {
-  color: #ffffff;
-  margin: 0.3rem 0;
+    color: #ffffff;
+    margin: 0.3rem 0;
 }
 
 .dropdown {
-  display: none;
-  margin-top: 0.5rem;
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-radius: 0 6px 6px 0;
-  list-style-type: none;
+    display: none;
+    margin-top: 0.5rem;
+    background-color: #f9f9f9;
+    /* border-left: 3px solid #444; */
+    padding: 1rem;
+    border-radius: 0 6px 6px 0;
+    list-style-type: none;
 }
-
-.dropdown li {
-  list-style-type: disc;
+.dropdown li{
+    list-style-type:disc;
 }
 
 .dropdown-toggle {
-  cursor: pointer;
-  background-color: #eee;
-  padding: 0.5rem;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+    cursor: pointer;
+    background-color: #eee;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-toggle:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .dropdown.active {
-  display: block;
+    display: block;
 }
 
-.services {
-  list-style-type: none;
+.services{
+    list-style: none;
+    list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding-top: 0.5rem;
+        flex: 1 1 auto;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .nav li {
+        white-space: nowrap;
+    }
+
+    .quick-contact {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
 }
